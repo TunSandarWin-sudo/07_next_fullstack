@@ -18,3 +18,4 @@ export const mysqlPool = mysql.createPool({
   connectionLimit: 10,
   ssl: process.env.DB_SSL === 'true' ? { minVersion: 'TLSv1.2', rejectUnauthorized: true } : undefined,
 });
+
